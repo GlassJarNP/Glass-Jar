@@ -1,6 +1,18 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  	<?php  dynamic_sidebar( 'footer-nav' ); ?>
+  	<div class="footer-footer">
+  		<div class="footer-logo">
+  			<img src="images/full-logo.png" alt="">
+  		</div>
+  		<div class="footer-copy">
+    		<p>&copy;<?php echo date('Y'); ?> GlassJar Scholarships</p>
+    	</div>
+    	<div class="footer-devs">
+    		<p>Designed by Emily Catalano.</p>
+    		<p>Developed by Tim Jack Wilkins &amp Jeanne Schiller.</p>
+    	</div>
+    </div>
   </div>
 </footer>
 
