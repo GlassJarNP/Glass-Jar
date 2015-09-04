@@ -7,12 +7,16 @@
 * Author URI: http://hackeryou.com
 */
 
+@import "bourbon/bourbon";
+@import "neat/neat";
 @import 'normalize';
+@import 'colours';
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 /*
 ====================================
 Default Styling
@@ -24,11 +28,11 @@ img {
 }
 
 body {
+	font-family: 'Open Sans', sans-serif;
 	color: #333;
 }
 
 .container {
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -41,11 +45,97 @@ body {
 .full {
 	width: 100%;
 }
+/*
+====================================
+Header Styling
+====================================
+*/
+header{
+	width: 100%;
+	background: $grey;
+	padding: 2% 4%;
+}
+h1 {
+	margin: 0;
+	float: left;
+}
+ul.menu li a{
+	padding: 0;
+	margin: 0;
+	background: none;
+	color: $white;
+}
 
+ul.menu li{
+	border: solid $grey 2px;
+	border-radius: 7px;
+	padding: 0 20px;
+	margin: 0;
+	float: right;
+	margin-top: 10px;
+}
 
+.menu li:hover{
+	border: solid $red 2px;
+	border-radius: 7px;
+}
+.large-logo_container{
+	width: 100%;
+	background: $grey;
+	
+}
+.large-logo{
+	@include outer-container;
+	width: 100%;
+	@include shift (4.5);
+	padding-bottom: 2%;
+}
+/*
+====================================
+About Styling
+====================================
+*/
+.block-text{
+	text-align: center;
+	padding: 4%;
+	line-height: 3;
+	color: $white;
+}
+.skin-red{
+	background: $red;
+}
+.main-content{
+	background: $white;
+}
+.main-content p{
+	margin: 0;
+}
+.main-content_wrapper{
 
+}
+/*
+====================================
+Contact Styling
+====================================
+*/
 
-
+/*
+====================================
+Footer Styling
+====================================
+*/
+footer{
+	background: $grey;
+	color: $white;
+}
+footer li{
+	display: block;
+}
+.footer-footer{
+	border-top: solid 2px $white;
+	font-weight: 300;
+	font-size: 10px;
+}
 
 
 
