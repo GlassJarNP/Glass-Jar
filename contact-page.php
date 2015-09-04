@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: Full Page, No Sidebar
+	Template Name: Contact Page, No Sidebar
 */
 
 get_header();  ?>
@@ -17,10 +17,14 @@ get_header();  ?>
 	  		<?php the_post_thumbnail('medium'); ?>
 	  	</div>	
 	  </div> <!-- /. large-logo_container-->
+      <div class="block-text skin-red">
+      	<?php the_field("block_text"); ?>
+      </div>
       <div class="main-content">
       	<div class="main-content_wrapper">
       		<?php the_title(); ?>
       		<?php the_content(); ?>
+          <?php the_field("contact_form"); ?>
       	</div>
       </div>
       
