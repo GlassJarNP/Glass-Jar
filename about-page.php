@@ -34,7 +34,8 @@ get_header();  ?>
 	      	<div>
 	      		<?php the_field('setp_3'); ?>
 	      		<?php the_field('setp_3_img'); ?>
-	      	</div>		
+	      	</div>
+	      	<?php the_content(); ?>		
       	</div>
       </div>
       

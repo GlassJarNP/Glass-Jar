@@ -26,7 +26,9 @@ get_header();  ?>
       		<?php the_content(); ?>
       	</div>
       </div>
-      
+      <div class="block-text skin-red">
+        <?php the_field("block_text_2"); ?>
+      </div>
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
 </div> <!-- /.main -->

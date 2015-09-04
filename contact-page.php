@@ -18,12 +18,13 @@ get_header();  ?>
 	  	</div>	
 	  </div> <!-- /. large-logo_container-->
       <div class="block-text skin-red">
-      	<?php the_field("about_block"); ?>
+      	<?php the_field("block_text"); ?>
       </div>
       <div class="main-content">
       	<div class="main-content_wrapper">
       		<?php the_title(); ?>
       		<?php the_content(); ?>
+          <?php the_field("contact_form"); ?>
       	</div>
       </div>
       

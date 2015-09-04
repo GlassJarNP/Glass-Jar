@@ -98,7 +98,15 @@ Give Styling
 .skin-blue{
 	background: $blue;
 }
-
+/*
+====================================
+Get Styling
+====================================
+*/
+.block-text h2{
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+}
 /*
 ====================================
 About Styling
