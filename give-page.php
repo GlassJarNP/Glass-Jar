@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: Full Page, No Sidebar
+	Template Name: Give Page, No Sidebar
 */
 
 get_header();  ?>
@@ -17,7 +17,7 @@ get_header();  ?>
 	  		<?php the_post_thumbnail('medium'); ?>
 	  	</div>	
 	  </div> <!-- /. large-logo_container-->
-      <div class="block-text skin-red">
+      <div class="block-text skin-blue">
       	<?php the_field("block_text"); ?>
       </div>
       <div class="main-content">
