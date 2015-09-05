@@ -12,7 +12,7 @@ get_header();  ?>
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	  <div class="large-logo_container">
+	  <div class="large-logo_container clearfix">
 	  	<div class="large-logo">
 	  		<?php the_post_thumbnail('medium'); ?>
 	  	</div>	
@@ -20,25 +20,25 @@ get_header();  ?>
       <div class="block-text skin-red">
       	<?php the_field("about_block"); ?>
       </div>
-      <div class="main-content">
-      	<div class="main-content_wrapper">
-      		<?php the_title(); ?>
-	      	<div>
-	      		<?php the_field('step_1'); ?>
-	      		<?php the_field('step_1_img'); ?>
+      <div class="main-content clearfix">
+      	<div class="main-content_container">
+      		<h2><?php the_title(); ?></h2>
+	      	<div class="about-steps">
+	      		<img src="<?php the_field( 'step_1_img' ); ?>" />
+	      		<p><?php the_field('step_1'); ?></p>
 	      	</div>	
-	      	<div>
-	      		<?php the_field('setp_2'); ?>
-	      		<?php the_field('setp_2_img'); ?>
+	      	<div class="about-steps">
+	      		<img src="<?php the_field( 'step_2_img' ); ?>" />
+	      		<p><?php the_field('step_2'); ?></p>
 	      	</div>	
-	      	<div>
-	      		<?php the_field('setp_3'); ?>
-	      		<?php the_field('setp_3_img'); ?>
+	      	<div class="about-steps">
+	      		<img src="<?php the_field( 'step_3_img' ); ?>" />
+	      		<p><?php the_field('step_3'); ?></p>
 	      	</div>
 	      	<?php the_content(); ?>		
       	</div>
       </div>
-      
+
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
 </div> <!-- /.main -->

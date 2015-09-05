@@ -12,7 +12,7 @@ get_header();  ?>
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	  <div class="large-logo_container">
+	  <div class="large-logo_container clearfix">
 	  	<div class="large-logo">
 	  		<?php the_post_thumbnail('medium'); ?>
 	  	</div>	
@@ -20,9 +20,8 @@ get_header();  ?>
       <div class="block-text skin-blue">
       	<h2><?php the_field("block_text"); ?><h2>
       </div>
-      <div class="main-content">
-      	<div class="main-content_wrapper">
-      		<?php the_title(); ?>
+      <div class="main-content clearfix">
+      	<div class="main-content_container get-form">
       		<?php the_content(); ?>
       	</div>
       </div>
