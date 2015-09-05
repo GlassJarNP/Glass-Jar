@@ -12,7 +12,7 @@ get_header();  ?>
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	  <div class="large-logo_container">
+	  <div class="large-logo_container clearfix">
 	  	<div class="large-logo">
 	  		<?php the_post_thumbnail('medium'); ?>
 	  	</div>	

@@ -45,6 +45,11 @@ body {
 .full {
 	width: 100%;
 }
+
+h2{
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+}
 /*
 ====================================
 Header Styling
@@ -86,10 +91,11 @@ ul.menu li{
 }
 .large-logo{
 	@include outer-container;
-	width: 100%;
+	@include span-columns (7); 
 	@include shift (4.5);
 	padding-bottom: 2%;
 }
+
 /*
 ====================================
 Give Styling
@@ -102,12 +108,8 @@ Give Styling
 .hero_container{
 	@include outer-container;
 }
-.jars h2{
-	text-transform: uppercase;
-	letter-spacing: 0.25rem;
-}
 .jars{
-	@include column-span(2);
+	@include span-columns(2); 
 	display: inline-block;
 	text-align: center;
 }
@@ -117,15 +119,53 @@ Give Styling
 .skin-blue{
 	background: $blue;
 }
+.main-content_container{
+	@include outer-container;
+	@include span-columns (8); 
+	@include shift (2);
+}
+/*
+====================================
+Form Styling
+====================================
+*/
+input{
+	padding: 1%;
+	border: none;
+}
+textarea{
+	border: none;
+}
+p .wpcf7-submit{
+	color: $white;
+}
+.wpcf7-submit{
+	background: $grey;
+	border: none;
+}
 /*
 ====================================
 Get Styling
 ====================================
 */
-.block-text h2{
-	text-transform: uppercase;
-	letter-spacing: 0.25rem;
+.get-form input{
+	@include outer-container;
+	@include span-columns(4);
+	@include shift ();
+
+	margin: 2% 10% 2% 0;
+
 }
+.get-form textarea{
+	@include outer-container;
+	@include span-columns(12);
+	margin: 2% 0;
+	
+}
+.get-form .wpcf7-submit{
+	@include shift (3.5);
+}
+
 /*
 ====================================
 About Styling
@@ -142,12 +182,13 @@ About Styling
 }
 .main-content{
 	background: $white;
+	width: 100%;
 }
 .main-content p{
 	margin: 0;
 }
-.main-content_wrapper{
-
+.main-content h2{
+	margin:0;
 }
 /*
 ====================================
