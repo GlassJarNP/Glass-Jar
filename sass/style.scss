@@ -95,6 +95,25 @@ ul.menu li{
 Give Styling
 ====================================
 */
+.hero{
+	background-color: $grey;
+	padding-bottom: 4%;
+}
+.hero_container{
+	@include outer-container;
+}
+.jars h2{
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+}
+.jars{
+	@include column-span(2);
+	display: inline-block;
+	text-align: center;
+}
+.give{
+	@include shift (3.5);
+}
 .skin-blue{
 	background: $blue;
 }

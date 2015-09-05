@@ -24,21 +24,21 @@ get_header();  ?>
       	<div class="main-content_wrapper">
       		<?php the_title(); ?>
 	      	<div>
+	      		<img src="<?php the_field( 'step_1_img' ); ?>" />
 	      		<?php the_field('step_1'); ?>
-	      		<?php the_field('step_1_img'); ?>
 	      	</div>	
 	      	<div>
-	      		<?php the_field('setp_2'); ?>
-	      		<?php the_field('setp_2_img'); ?>
+	      		<img src="<?php the_field( 'step_2_img' ); ?>" />
+	      		<?php the_field('step_2'); ?>
 	      	</div>	
 	      	<div>
-	      		<?php the_field('setp_3'); ?>
-	      		<?php the_field('setp_3_img'); ?>
+	      		<img src="<?php the_field( 'step_3_img' ); ?>" />
+	      		<?php the_field('step_3'); ?>
 	      	</div>
 	      	<?php the_content(); ?>		
       	</div>
       </div>
-      
+
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
 </div> <!-- /.main -->
