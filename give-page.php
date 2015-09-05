@@ -17,8 +17,8 @@ get_header();  ?>
         <?php the_post_thumbnail('medium'); ?>
       </div>  
     </div> <!-- /. large-logo_container-->
-    <div class="hero">
-      <div class="hero_container ">
+    <div class="hero clearfix">
+      <div class="hero_container">
         <div class="jars give">
             <img src="<?php the_field( 'hero_image_give' ); ?>" />
             <div>

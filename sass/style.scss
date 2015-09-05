@@ -30,6 +30,7 @@ img {
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
+	position: relative;
 }
 
 .container {
@@ -59,6 +60,7 @@ header{
 	width: 100%;
 	background: $grey;
 	padding: 2% 4%;
+	position: fixed;
 }
 h1 {
 	margin: 0;
@@ -107,21 +109,29 @@ Give Styling
 }
 .hero_container{
 	@include outer-container;
+	@include span-columns(12);
 }
 .jars{
-	@include span-columns(2); 
+	@include span-columns(3); 
 	display: inline-block;
 	text-align: center;
 }
+.jars img{
+	@include span-columns(7);
+	@include shift (2);
+}
+.jars a{
+	@include span-columns(12);
+}
 .give{
-	@include shift (3.5);
+	@include shift (3);
 }
 .skin-blue{
 	background: $blue;
 }
 .main-content_container{
 	@include outer-container;
-	@include span-columns (8); 
+	@include span-columns (9); 
 	@include shift (2);
 }
 /*
