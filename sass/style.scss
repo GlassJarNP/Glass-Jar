@@ -117,11 +117,12 @@ Give Styling
 	text-align: center;
 }
 .jars img{
-	@include span-columns(7);
-	@include shift (2);
+	@include span-columns(8); 
+	@include shift (4);
+
 }
 .jars a{
-	@include span-columns(12);
+
 }
 .give{
 	@include shift (3);

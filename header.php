@@ -21,7 +21,7 @@
 <header>
   <div class="container clearfix">
     <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="give">
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
