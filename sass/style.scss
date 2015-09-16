@@ -280,18 +280,23 @@ footer li{
 }
 #pages-2 ul{
 	margin: 0;
-	@include span-columns(6);
+	@include span-columns(4);
 }
 #pages-2 h3{
 	display: none;
 }
 #text-2{
 	@include span-columns(4);
-	
+	margin-top: 2%;
+	text-align: center;
+	.info{
+		color: $red;
+	}	
 }
 #text-3{
-	@include span-columns(2);
+	@include span-columns(4);
 	text-align: right;
+	margin-top: 3%;
 }
 .footer-logo{
 	float: left;
@@ -302,6 +307,10 @@ footer li{
 	float: left;
 	@include span-columns(3);
 
+}
+footer .fa{
+	font-size: 25px;
+	margin-left: 2%;
 }
 .footer-devs{
 	float: left;
