@@ -65,7 +65,7 @@ Header Styling
 header{
 	width: 100%;
 	background: $grey;
-	padding: 2% 4%;
+	padding: 1% 4%;
 	position: fixed;
 }
 h1 {
@@ -145,6 +145,38 @@ Give Styling
 	@include span-columns (8); 
 	@include shift (2);
 }
+.get-content{
+	text-align: center;
+}
+.get-content_copy{
+	@include span-columns (12); 
+}
+.give-content{
+	text-align: center;
+}
+#sc_checkout_form_1{
+	@include span-columns (5); 
+	text-align: center;
+}
+#sc_checkout_form_1 .sc-cf-text{
+	@include shift (2.75);
+}
+.stripe-or{
+	@include span-columns (2); 
+
+}
+#sc_checkout_form_2{
+	@include span-columns (5); 
+	text-align: center;
+}
+.sc-form-group .sc-form-control{
+	border: none !important;
+	border-radius: 0 !important;
+}
+// form{
+// 	@include span-columns (1); 
+// }
+
 /*
 ====================================
 Form Styling
@@ -160,15 +192,19 @@ textarea{
 p .wpcf7-submit{
 	color: $white;
 }
-.wpcf7-submit{
+.wpcf7-submit, 
+.button{
 	background: $grey;
 	border: none;
 	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: $white;
 }
 .fine-print{
 	text-align: center;
 	font-size: 12px;
 }
+
 /*
 ====================================
 Get Styling
