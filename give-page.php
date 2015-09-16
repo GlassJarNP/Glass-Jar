@@ -33,20 +33,23 @@ get_header();  ?>
         </div>
       </div> <!-- /.hero-wrapper -->   
     </div><!-- /.hero imgs -->    
-    <div class="block-text skin-blue">
+    <div class="block-text skin-blue" id="get">
       <?php the_field("block_text"); ?>
     </div>
-    <div class="main-content clearfix">
-      <div class="main-content_container">
-        <?php the_field("get_scholarship"); ?> 
+    <div class="main-content clearfix" >
+      <div class="main-content_container get-content">
+        <div class="get-content_copy">
+          <?php the_field("get_scholarship"); ?> 
+        </div>
+        <button class="button"><p>get started</p></button>
       </div>
     </div>
     <div class="block-text skin-red">
       <?php the_field("block_text_2"); ?>
     </div>
-    <div class="main-content clearfix">
-      <div class="main-content_container">
-        <?php the_title(); ?>
+    <div class="main-content clearfix" id="give">
+      <div class="main-content_container give-content">
+        <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
       </div>
     </div>
