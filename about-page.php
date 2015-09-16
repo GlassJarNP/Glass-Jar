@@ -35,7 +35,9 @@ get_header();  ?>
 	      		<img src="<?php the_field( 'step_3_img' ); ?>" />
 	      		<p><?php the_field('step_3'); ?></p>
 	      	</div>
-	      	<?php the_content(); ?>		
+	      	<div class="main-content-about">
+	      		<h3><?php the_content(); ?></h3>
+	      	</div>	
       	</div>
       </div>
 
