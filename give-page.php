@@ -33,10 +33,10 @@ get_header();  ?>
         </div>
       </div> <!-- /.hero-wrapper -->   
     </div><!-- /.hero imgs -->    
-    <div class="block-text skin-blue">
+    <div class="block-text skin-blue" id="get">
       <?php the_field("block_text"); ?>
     </div>
-    <div class="main-content clearfix" id="get">
+    <div class="main-content clearfix" >
       <div class="main-content_container get-content">
         <div class="get-content_copy">
           <?php the_field("get_scholarship"); ?> 

@@ -29,7 +29,7 @@ img {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #333;
+	color: $grey;
 	position: relative;
 }
 
@@ -151,32 +151,39 @@ Give Styling
 .get-content_copy{
 	@include span-columns (12); 
 }
+.button{
+	margin-top: 5%;
+	@include span-columns (3); 
+	@include shift (4.5);
+	padding: 1%;
+}
 .give-content{
 	text-align: center;
 }
+.give-content p{
+	padding: 0 0 3% 0;
+}
 #sc_checkout_form_1{
 	@include span-columns (5); 
-	text-align: center;
 }
 #sc_checkout_form_1 .sc-cf-text{
 	@include shift (2.75);
 }
 .stripe-or{
 	@include span-columns (2); 
-
+	padding-top: 10%;
+	text-align: center;
 }
 #sc_checkout_form_2{
 	@include span-columns (5); 
-	text-align: center;
 }
 .sc-form-group .sc-form-control{
 	border: none !important;
 	border-radius: 0 !important;
 }
-// form{
-// 	@include span-columns (1); 
-// }
-
+.sc-payment-btn{
+	padding: 8px 30px;
+}
 /*
 ====================================
 Form Styling
@@ -193,7 +200,8 @@ p .wpcf7-submit{
 	color: $white;
 }
 .wpcf7-submit, 
-.button{
+.button,
+.sc-payment-btn{
 	background: $grey;
 	border: none;
 	letter-spacing: 0.2rem;
@@ -240,24 +248,27 @@ About Styling
 */
 .block-text{
 	text-align: center;
-	padding: 4%;
-	line-height: 3;
+	padding: 3%;
+	line-height: 2.5;
 	color: $white;
-	font-size: 20px;
-	letter-spacing: 0.2em;
+	font-size: 18px;
+	letter-spacing: 0.18em;
 }
 .skin-red{
 	background: $red;
 }
 .main-content{
+	padding: 3% 0;
 	background: $white;
 	width: 100%;
 }
 .main-content p{
 	margin: 0;
 }
-.main-content h2{
+.about-content h2{
 	margin:0;
+	padding-left: 10px;
+	padding-bottom: 3%;
 }
 .about-steps{
 	@include span-columns(12);
@@ -275,6 +286,10 @@ About Styling
 .main-content-about{
 	text-transform: uppercase;
 	text-align: center;
+}
+.main-content-about h3{
+	@include span-columns(12);
+	padding: 2% 0;
 }
 /*
 ====================================
@@ -314,6 +329,10 @@ footer li{
 	font-size: 10px;
 	@include span-columns(12);
 }
+#pages-2{
+		padding-top: 1%;
+		padding-bottom: 1%;
+}
 #pages-2 ul{
 	margin: 0;
 	@include span-columns(4);
@@ -323,7 +342,7 @@ footer li{
 }
 #text-2{
 	@include span-columns(4);
-	margin-top: 2%;
+	margin-top: 1%;
 	text-align: center;
 	.info{
 		color: $red;
@@ -332,7 +351,7 @@ footer li{
 #text-3{
 	@include span-columns(4);
 	text-align: right;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 .footer-logo{
 	float: left;

@@ -21,7 +21,7 @@ get_header();  ?>
       	<?php the_field("about_block"); ?>
       </div>
       <div class="main-content clearfix">
-      	<div class="main-content_container">
+      	<div class="main-content_container about-content">
       		<h2><?php the_title(); ?></h2>
 	      	<div class="about-steps">
 	      		<img src="<?php the_field( 'step_1_img' ); ?>" />
