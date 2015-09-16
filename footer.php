@@ -1,7 +1,7 @@
 <footer>
-  <div class="container">
+  <div class="container clearfix">
   	<?php  dynamic_sidebar( 'footer-nav' ); ?>
-  	<div class="footer-footer">
+  	<div class="footer-footer clearfix">
   		<div class="footer-logo">
   			<img src="images/full-logo.png" alt="">
   		</div>
@@ -10,7 +10,7 @@
     	</div>
     	<div class="footer-devs">
     		<p>Designed by Emily Catalano.</p>
-    		<p>Developed by Tim Jack Wilkins &amp Jeanne Schiller.</p>
+    		<p>Developed by <a target="_blank" href="http://jeanneschiller.com/">Jeanne Schiller</a> &amp <a target="_blank" href="http://timjackwilkins.com/">Tim Jack Wilkins</a>.</p>
     	</div>
     </div>
   </div>

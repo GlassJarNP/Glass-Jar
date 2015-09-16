@@ -46,10 +46,16 @@ body {
 .full {
 	width: 100%;
 }
+h2, h3{
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
 
 h2{
-	text-transform: uppercase;
-	letter-spacing: 0.25rem;
+	font-size: 25px;
+}
+h3{
+	font-size: 20px;
 }
 /*
 ====================================
@@ -75,8 +81,8 @@ ul.menu li a{
 
 ul.menu li{
 	border: solid $grey 2px;
-	border-radius: 7px;
-	padding: 0 20px;
+	border-radius: 5px;
+	padding: 1px 20px;
 	margin: 0;
 	float: right;
 	margin-top: 10px;
@@ -84,18 +90,18 @@ ul.menu li{
 
 .menu li:hover{
 	border: solid $red 2px;
-	border-radius: 7px;
+	border-radius: 5px;
 }
 .large-logo_container{
 	width: 100%;
 	background: $grey;
-	
 }
 .large-logo{
 	@include outer-container;
-	@include span-columns (7); 
+	@include span-columns (3); 
 	@include shift (4.5);
 	padding-bottom: 2%;
+	margin-top: 100px;
 }
 
 /*
@@ -109,20 +115,24 @@ Give Styling
 }
 .hero_container{
 	@include outer-container;
-	@include span-columns(12);
+	@include span-columns(10);
+	@include shift (0.75);
 }
 .jars{
 	@include span-columns(3); 
+	@include shift (0.5);
 	display: inline-block;
 	text-align: center;
 }
 .jars img{
 	@include span-columns(8); 
-	@include shift (4);
+	@include shift (2);
 
 }
 .jars a{
-
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
 }
 .give{
 	@include shift (3);
@@ -132,7 +142,7 @@ Give Styling
 }
 .main-content_container{
 	@include outer-container;
-	@include span-columns (9); 
+	@include span-columns (8); 
 	@include shift (2);
 }
 /*
@@ -153,6 +163,11 @@ p .wpcf7-submit{
 .wpcf7-submit{
 	background: $grey;
 	border: none;
+	letter-spacing: 0.2rem;
+}
+.fine-print{
+	text-align: center;
+	font-size: 12px;
 }
 /*
 ====================================
@@ -162,10 +177,13 @@ Get Styling
 .get-form input{
 	@include outer-container;
 	@include span-columns(4);
-	@include shift ();
-
-	margin: 2% 10% 2% 0;
-
+	margin: 2% 2.3%;
+}
+.get-form .text-897 input{
+    margin-left: 0;
+}
+.get-form .text-315 input{
+    margin-left: 0;
 }
 .get-form textarea{
 	@include outer-container;
@@ -174,7 +192,9 @@ Get Styling
 	
 }
 .get-form .wpcf7-submit{
-	@include shift (3.5);
+	margin: 2% auto 4% auto;
+	@include shift (4);
+	letter-spacing: 0.2rem;
 }
 
 /*
@@ -187,6 +207,8 @@ About Styling
 	padding: 4%;
 	line-height: 3;
 	color: $white;
+	font-size: 20px;
+	letter-spacing: 0.2em;
 }
 .skin-red{
 	background: $red;
@@ -201,11 +223,42 @@ About Styling
 .main-content h2{
 	margin:0;
 }
+.about-steps{
+	@include span-columns(12);
+	margin-bottom: 1%; 
+}
+.about-steps img{
+	float: left;
+	@include span-columns(1.5);
+}
+.about-steps p{
+	float: left;
+	@include span-columns(10.5);
+	padding-top: 2%;
+}
+.main-content-about{
+	text-transform: uppercase;
+	text-align: center;
+}
 /*
 ====================================
 Contact Styling
 ====================================
 */
+.contact-form input{
+	@include span-columns(12);
+	margin: 2% 0;
+}
+.contact-form textarea{
+	@include span-columns(12);	
+	margin: 2% 0;
+}
+.contact-form .wpcf7-submit{
+	margin: 2% auto 4% auto;
+	@include span-columns(4);
+	@include shift(4);	
+
+}
 
 /*
 ====================================
@@ -223,6 +276,47 @@ footer li{
 	border-top: solid 2px $white;
 	font-weight: 300;
 	font-size: 10px;
+	@include span-columns(12);
+}
+#pages-2 ul{
+	margin: 0;
+	@include span-columns(4);
+}
+#pages-2 h3{
+	display: none;
+}
+#text-2{
+	@include span-columns(4);
+	margin-top: 2%;
+	text-align: center;
+	.info{
+		color: $red;
+	}	
+}
+#text-3{
+	@include span-columns(4);
+	text-align: right;
+	margin-top: 3%;
+}
+.footer-logo{
+	float: left;
+	@include span-columns(2);
+	padding-left: 2%;
+}
+.footer-copy{
+	float: left;
+	@include span-columns(3);
+
+}
+footer .fa{
+	font-size: 25px;
+	margin-left: 2%;
+}
+.footer-devs{
+	float: left;
+	text-align: right;
+	@include span-columns(7);
+	padding-right: 2%;
 }
 
 
