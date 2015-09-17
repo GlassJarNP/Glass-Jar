@@ -335,13 +335,24 @@ footer li{
 }
 #pages-2 ul{
 	margin: 0;
-	@include span-columns(4);
+	@include span-columns(2);
 }
 #pages-2 h3{
 	display: none;
 }
+#pages-2{
+		padding-top: 0;
+		padding-bottom: 0;
+}
+#pages-3 ul{
+	margin: 0;
+	@include span-columns(2);
+}
+#pages-3 h3{
+	display: none;
+}
 #text-2{
-	@include span-columns(4);
+	@include span-columns(5);
 	margin-top: 1%;
 	text-align: center;
 	.info{
@@ -349,7 +360,7 @@ footer li{
 	}	
 }
 #text-3{
-	@include span-columns(4);
+	@include span-columns(3);
 	text-align: right;
 	margin-top: 2%;
 }
