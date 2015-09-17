@@ -65,7 +65,7 @@ Header Styling
 header{
 	width: 100%;
 	background: $grey;
-	padding: 1% 4%;
+	padding: 0 4%;
 	position: fixed;
 }
 h1 {
@@ -85,7 +85,7 @@ ul.menu li{
 	padding: 1px 20px;
 	margin: 0;
 	float: right;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .menu li:hover{
@@ -357,10 +357,13 @@ footer li{
 	float: left;
 	@include span-columns(2);
 	padding-left: 2%;
+	padding-top: 8px;
 }
 .footer-copy{
 	float: left;
 	@include span-columns(3);
+	font-size: 14px;
+	padding-top: 5px;
 
 }
 footer .fa{

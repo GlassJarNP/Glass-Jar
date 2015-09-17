@@ -3,7 +3,7 @@
   	<?php  dynamic_sidebar( 'footer-nav' ); ?>
   	<div class="footer-footer clearfix">
   		<div class="footer-logo">
-  			<img src="images/full-logo.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/full-logo.png">
   		</div>
   		<div class="footer-copy">
     		<p>&copy;<?php echo date('Y'); ?> GlassJar Scholarships</p>

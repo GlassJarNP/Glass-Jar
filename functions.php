@@ -213,6 +213,8 @@ if ( ! function_exists( 'hackeryou_posted_in' ) ) :
 /**
  * Prints HTML with meta information for the current post (category, tags and permalink).
  */
+
+
 function hackeryou_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );

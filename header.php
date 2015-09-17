@@ -21,8 +21,8 @@
 <header>
   <div class="container clearfix">
     <h1>
-      <a href="<?php echo home_url( '/' ); ?>">
-        <img src="/images/glassjar-j.png">
+      <a href="<?php echo home_url( '/' ); ?>"title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/GJlogo.png" style="width:100px;">
       </a>
     </h1>
 
