@@ -41,7 +41,7 @@ get_header();  ?>
         <div class="get-content_copy">
           <?php the_field("get_scholarship"); ?> 
         </div>
-        <button class="button"><p>get started</p></button>
+        <a href="<?php echo home_url( '/?page_id=6' ); ?>"><button class="button">Get Started</button></a>
       </div>
     </div>
     <div class="block-text skin-red">
