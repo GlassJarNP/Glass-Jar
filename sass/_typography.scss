@@ -3,6 +3,7 @@ a {
 	text-decoration: none;
 	padding: 0;
 	margin: 0;
+	transition: all 0.15s ease;
 	&:hover {
 		color: $blue;
 	}
